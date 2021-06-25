@@ -7,7 +7,7 @@ class SignUpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-          child: Text('Sign Up Page'),
+          child: Text('Sign up Page'),
         )
     );
 
