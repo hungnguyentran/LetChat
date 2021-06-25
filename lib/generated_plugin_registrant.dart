@@ -4,7 +4,6 @@
 
 // ignore_for_file: lines_longer_than_80_chars
 
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:firebase_core_web/firebase_core_web.dart';
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
