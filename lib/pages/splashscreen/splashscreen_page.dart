@@ -27,7 +27,7 @@ class SplashPage extends StatelessWidget {
       nextScreen: LoginPage(),
       splashTransition: SplashTransition.slideTransition,
       backgroundColor: Colors.black,
-      duration: 2000,
+      duration: 1000,
     );
   }
 }

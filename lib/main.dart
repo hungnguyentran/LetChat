@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:letchat/pages/login/login_page.dart';
 import 'package:letchat/pages/signup/signup_page.dart';
 import 'pages/forgotpassword/forgot_password_page.dart';
 import 'pages/splashscreen/splashscreen_page.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => SplashPage(),
+        'SignIn': (context) => LoginPage(),
         'ForgotPassword': (context) => ForgotPasswordPage(),
         'SignUp': (context) => SignUpPage(),
       },
