@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:letchat/components/background_image.dart';
 import 'package:letchat/components/constant.dart';
 import 'package:letchat/widgets/password_input.dart';
@@ -105,6 +106,7 @@ class SignUpPage extends StatelessWidget {
                     ),
                     RoundButton(
                       buttonName: 'Register',
+                      buttonRoute: 'Home',
                     ),
                     SizedBox(
                       height: 25.0,
@@ -117,8 +119,8 @@ class SignUpPage extends StatelessWidget {
                           style: kBodyText,
                         ),
                         GestureDetector(
-                          onTap: () {
-                            Navigator.pushNamed(context, 'SignIn');
+                          onTap: () => {
+                            Get.toNamed('SignIn'),
                           },
                           child: Text(
                             'Login',

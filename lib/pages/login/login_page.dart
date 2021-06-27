@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:letchat/components/background_image.dart';
 import 'package:letchat/components/constant.dart';
 import 'package:letchat/widgets/password_input.dart';
@@ -33,7 +34,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'LetChat',
+                      'letChat',
                       style: TextStyle(
                           color: kWhite,
                           fontWeight: FontWeight.bold,
@@ -59,7 +60,9 @@ class LoginPage extends StatelessWidget {
                   inputAction: TextInputAction.done,
                 ),
                 GestureDetector(
-                  onTap: () => Navigator.pushNamed(context, 'ForgotPassword'),
+                  onTap: () => {
+                    Get.toNamed('ForgotPassword'),
+                  },
                   child: Text(
                     'Forgot password?',
                     style: kBodyText,
@@ -70,6 +73,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 RoundButton(
                   buttonName: 'Log in',
+                  buttonRoute: 'Home',
                 ),
                 SizedBox(
                   height: 25,
@@ -77,7 +81,9 @@ class LoginPage extends StatelessWidget {
               ],
             ),
             GestureDetector(
-              onTap: () => Navigator.pushNamed(context, 'SignUp'),
+              onTap: () => {
+                Get.toNamed('SignUp'),
+              },
               child: Container(
                 child: Text(
                   'Create New Account?',

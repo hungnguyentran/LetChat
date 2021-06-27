@@ -11,3 +11,4 @@ const TextStyle kButtonText =
 const Color kWhite = Colors.white;
 const Color kYellow = Colors.yellow;
 const Color kBlack = Colors.black;
+const Color kRed = Colors.red;
